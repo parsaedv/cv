@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+  </head>
+  <body>
+    <h3>Contact Me</h3>
+    <ol type="I">
+      <li>
+        social media
+        <ul>
+          <li><a href="https://www.instagram.com/parsaedv/">instagram</a></li>
+          <li><a href="https://twitter.com/parsaedv">twitter</a></li>
+        </ul>
+      </li>
+      <li>Gmail:parsa.edv@gmail.com</li>
+    </ol>
+    <hr size="2px" color="black" />
+    <form
+      action="mailto:parsa.edv@gmail.com"
+      method="post"
+      enctype="text/plain"
+    >
+      <label>Your Name:</label>
+      <input type="text" name="Your Name" value="" /><br />
+      <label>Your email:</label>
+      <input id="blah" type="email" name="Your Email" /><br />
+      <label>Your Massage:</label><br />
+      <textarea name="Your Massage" id="" cols="30" rows="10"></textarea><br />
+      <input type="submit"
+      onclick=`${console.log(document.getElementById("blah").value)}` /><br />
+      <!-- <button type="submit">submit</button> -->
+    </form>
+  </body>
+</html>
